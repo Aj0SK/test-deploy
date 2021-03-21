@@ -29,3 +29,6 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
         script: echo "Hello" > a.txt
+    - run: |
+            echo "Hello" > a.txt
+            g++ main.cpp
